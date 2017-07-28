@@ -12,5 +12,7 @@
 
   "display_name": "Ruby, RSpec",
 
-  "image_name": "cyberdojofoundation/ruby_rspec"
+  "image_name": "cyberdojofoundation/ruby_rspec",
+
+  "runner_choice": "stateless"
 }
