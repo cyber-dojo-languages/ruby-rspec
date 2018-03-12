@@ -1,4 +1,4 @@
-require './hiker'
+require_relative 'hiker'
 
 describe "hiker" do
 
