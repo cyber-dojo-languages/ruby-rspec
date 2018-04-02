@@ -1,4 +1,3 @@
-
 {
   "display_name": "Ruby, RSpec",
 
@@ -10,7 +9,7 @@
 
   "image_name": "cyberdojofoundation/ruby_rspec",
 
-  "filename_extension" : ".rb",
+  "filename_extension": ".rb",
 
   "tab_size": 2,
 
