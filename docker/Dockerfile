@@ -3,6 +3,4 @@ LABEL maintainer=jon@jaggersoft.com
 
 RUN gem install --no-rdoc --no-ri rspec
 
-RUN gem install hirb
-
 COPY red_amber_green.rb /usr/local/bin
