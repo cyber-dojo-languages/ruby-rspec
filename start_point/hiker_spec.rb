@@ -1,3 +1,4 @@
+require_relative 'coverage'
 require_relative 'hiker'
 
 describe "hiker" do

@@ -4,7 +4,13 @@
   "visible_filenames": [
     "hiker_spec.rb",
     "hiker.rb",
-    "cyber-dojo.sh"
+    "cyber-dojo.sh",
+    "coverage.rb"
+  ],
+
+  "hidden_filenames": [
+    "coverage/\\.last_run\\.json",
+    "coverage/\\.resultset\\.json"
   ],
 
   "image_name": "cyberdojofoundation/ruby_rspec",
