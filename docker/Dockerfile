@@ -1,6 +1,7 @@
-FROM  cyberdojofoundation/ruby
+FROM cyberdojofoundation/ruby
 LABEL maintainer=jon@jaggersoft.com
 
-RUN gem install --no-rdoc --no-ri rspec
+RUN echo "gem: --no-rdoc --no-ri" > ~/.gemrc
+RUN gem install rspec
 
 COPY red_amber_green.rb /usr/local/bin
