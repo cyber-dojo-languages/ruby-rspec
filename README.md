@@ -1,4 +1,5 @@
-# Ruby, RSpec
 
-![Build Status](https://travis-ci.org/cyber-dojo-languages/ruby-rspec.svg?branch=master)
+[![CircleCI](https://circleci.com/gh/cyber-dojo-languages/ruby-rspec.svg?style=svg)](https://circleci.com/gh/cyber-dojo-languages/ruby-rspec)
 
+# display_name="Ruby, RSpec"
+# image_name="cyberdojofoundation/ruby_rspec"
