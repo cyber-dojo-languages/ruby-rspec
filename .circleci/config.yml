@@ -14,12 +14,13 @@ workflows:
   nightly:
     triggers:
       - schedule:
-          cron: "0 0 * * *"
+          cron: "20 * * * *"
           filters:
             branches:
               only: [ master ]
     jobs:
       - build-publish-trigger
+          context: cyberdojo-languages-context
   commit:
     jobs:
       - build-publish-trigger:
