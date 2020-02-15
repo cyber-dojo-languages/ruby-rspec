@@ -1,2 +1,2 @@
 # Test output can be formatted as progress or documentation
-rspec . --format progress
+NO_COLOR=1 rspec . --format progress
