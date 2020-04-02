@@ -14,6 +14,6 @@ RUN apk add --update coreutils bash tar file
 LABEL maintainer=jon@jaggersoft.com
 
 COPY install.sh .
-RUN ./install.sh
+RUN ./install.sh && rm ./install.sh
 
 COPY red_amber_green.rb /usr/local/bin
