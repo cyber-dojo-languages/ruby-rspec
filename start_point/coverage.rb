@@ -33,7 +33,7 @@ module SimpleCov
   end
 end
 
-SimpleCov.command_name "Approval"
+SimpleCov.command_name("RSpec")
 SimpleCov.at_exit do
   # Only create coverage report on green traffic-light
   if SimpleCov.exit_status_from_exception === 0
