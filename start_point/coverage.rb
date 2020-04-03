@@ -12,9 +12,6 @@ module SimpleCov
         `mkdir #{report_dir} 2> /dev/null`
         IO.write("#{report_dir}/coverage.txt", stdout)
       end
-      def amber_traffic_light?
-        $exception_raised
-      end
       def report_dir
         "#{ENV['CYBER_DOJO_SANDBOX']}/report"
       end
