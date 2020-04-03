@@ -12,6 +12,9 @@ module SimpleCov
         `mkdir #{report_dir} 2> /dev/null`
         IO.write("#{report_dir}/coverage.txt", stdout)
       end
+      def amber_traffic_light?
+        $exception_raised
+      end
       def report_dir
         "#{ENV['CYBER_DOJO_SANDBOX']}/report"
       end
@@ -30,5 +33,11 @@ module SimpleCov
   end
 end
 
-SimpleCov.formatter = SimpleCov::Formatter::FileWriter
+SimpleCov.command_name "Approval"
+SimpleCov.at_exit do
+  # Only create coverage report on green traffic-light
+  if SimpleCov.exit_status_from_exception === 0
+    SimpleCov::Formatter::FileWriter.new.format(SimpleCov.result)
+  end
+end
 SimpleCov.start
